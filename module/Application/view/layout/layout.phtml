@@ -22,7 +22,9 @@
     <body>
         <div class="navbar navbar-inverse navbar-fixed-top za1-nav">
             <div class="container">
-                <a class="navbar-brand" href="<?php echo $this->url('home') ?>"><img src="<?php echo $this->basePath() . '/img/zfapi_logo.png' ?>"></a>
+                <a class="navbar-header" href="<?php echo $this->url('home') ?>">
+                    <img src="<?= $this->basePath('/zf-apigility/img/ag-logo.png') ?>" />
+                </a>
                 <ul class="nav navbar-nav">
                     <?php if (class_exists('ZF\ApiFirstAdmin\Module', false)): ?>
                         <li class="active"><a href="/admin">Setup</a></li>
